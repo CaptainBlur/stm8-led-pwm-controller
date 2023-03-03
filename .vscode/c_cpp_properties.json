@@ -1,0 +1,44 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/home/valdo/Documents/PlatformIO/Projects/230207-021113-spl-blink/include",
+                "/home/valdo/Documents/PlatformIO/Projects/230207-021113-spl-blink/src",
+                "/home/valdo/.platformio/packages/framework-ststm8spl/Libraries/STM8S_StdPeriph_Driver/inc",
+                "/home/valdo/Documents/PlatformIO/Projects/230207-021113-spl-blink/.pio/libdeps/stm8sblue/Unity/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/home/valdo/Documents/PlatformIO/Projects/230207-021113-spl-blink/include",
+                    "/home/valdo/Documents/PlatformIO/Projects/230207-021113-spl-blink/src",
+                    "/home/valdo/.platformio/packages/framework-ststm8spl/Libraries/STM8S_StdPeriph_Driver/inc",
+                    "/home/valdo/Documents/PlatformIO/Projects/230207-021113-spl-blink/.pio/libdeps/stm8sblue/Unity/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "F_CPU=16000000L",
+                "PLATFORMIO=60106",
+                "STM8S_BLUE",
+                "STM8S103",
+                "USE_STDPERIPH_DRIVER",
+                "USE_STDINT",
+                ""
+            ],
+            "compilerPath": "/home/valdo/.platformio/packages/toolchain-sdcc/bin/sdcc",
+            "compilerArgs": [
+                "-mstm8",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

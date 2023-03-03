@@ -1,0 +1,82 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: sdcc build active file",
+			"command": "/home/valdo/.platformio/packages/toolchain-sdcc/bin/sdcc",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}",
+				"-mstm8",
+				"",
+				"--debug",
+				"-v"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /home/valdo/.platformio/packages/toolchain-sdcc/bin/sdcc"
+		},
+		{
+			"type": "PlatformIO",
+			"task": "Upload",
+			"problemMatcher": [
+				"$platformio"
+			],
+			"label": "PlatformIO: Upload"
+		},
+		{
+			"type": "PlatformIO",
+			"task": "Upload (stm8sblue)",
+			"problemMatcher": [
+				"$platformio"
+			],
+			"label": "PlatformIO: Upload (stm8sblue)"
+		},
+		{
+			"type": "PlatformIO",
+			"task": "Build",
+			"problemMatcher": [
+				"$platformio"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "PlatformIO: Build"
+		},
+		{
+			"type": "PlatformIO",
+			"task": "Devices",
+			"problemMatcher": [
+				"$platformio"
+			],
+			"label": "PlatformIO: Devices"
+		},
+		{
+			"type": "PlatformIO",
+			"task": "Check",
+			"problemMatcher": [
+				"$platformio"
+			],
+			"label": "PlatformIO: Check"
+		},
+		{
+			"type": "PlatformIO",
+			"task": "Build (stm8sblue)",
+			"problemMatcher": [
+				"$platformio"
+			],
+			"group": "build",
+			"label": "PlatformIO: Build (stm8sblue)"
+		}
+	]
+}
