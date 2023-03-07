@@ -29,11 +29,6 @@
 #include "stm8s.h"
 // #include "stm8s_it.h"    /* SDCC patch: required by SDCC for interrupts */
 
-/**
-  * @addtogroup GPIO_Toggle
-  * @{
-  */
-
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Evalboard I/Os configuration */
@@ -82,10 +77,6 @@ void widthChange(uint8_t width);
 void uartInit(void);
 void uartTxSingle(uint8_t msg);
 
-
-/* Private functions ---------------------------------------------------------*/
-/* Public functions ----------------------------------------------------------*/
-
 /**
   * @brief  Main program.
   * @param  None
@@ -104,7 +95,7 @@ void main(void)
   blink(data_array[0]);
 
   while(1){
-    delay();
+    if (tick_cnt!=0) delay(); ///Start sampling only when first tick detected
 
     if (!GPIO_ReadInputPin(BUTTON_PORT, BUTTON_PIN)) tick_cnt++;
     else tick_cnt = 0;
